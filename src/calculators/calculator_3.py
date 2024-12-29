@@ -39,8 +39,8 @@ class Calculator3:
         return multiplication
     
     def __verify_results(self, variance: float, multiplication: float) -> None:
-        if variance < multiplication:
-            raise HttpBadRequestError("Process failure: variance less than multiplication")
+        if variance > multiplication:
+            raise HttpBadRequestError("Process failure: variance greater than multiplication")
         
     def __format_response(self, variance: float) -> Dict:
         return {
