@@ -18,7 +18,7 @@ def test_calculate_integration():
     formated_response = calculator_2.calculate(mock_request)
 
     assert isinstance(formated_response, dict)
-    assert formated_response == {'data': {'Calculator': 2, 'result': 0.08}}
+    assert formated_response == {'data': {'calculator': 2, 'result': 0.08}}
 
 def test_calculate():
     mock_request = MockRequest({ "numbers": [2.12, 4.62, 1.32] })
@@ -28,4 +28,4 @@ def test_calculate():
     formated_response = calculator_2.calculate(mock_request)
 
     assert isinstance(formated_response, dict)
-    assert formated_response == {'data': {'Calculator': 2, 'result': 0.33}}
+    assert formated_response == {'data': {'calculator': 2, 'result': 0.33}}

@@ -11,15 +11,13 @@ def test_calculate():
     calculator_1 = Calculator1()
 
     response = calculator_1.calculate(mock_request)
-    print()
-    print(response)
 
     assert "data" in response
-    assert "Calculator" in response["data"]
+    assert "calculator" in response["data"]
     assert "result" in response["data"]
 
     assert response["data"]["result"] == 14.25
-    assert response["data"]["Calculator"] == 1
+    assert response["data"]["calculator"] == 1
 
 def test_calculate_with_body_error():
     mock_request = MockRequest(body={ "something": 1 })
