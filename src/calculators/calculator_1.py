@@ -34,7 +34,7 @@ class Calculator1:
     def __format_response(self, calc_result: float) -> Dict:
         return {
             "data": {
-                "Calculator": 1,
+                "calculator": 1,
                 "result": round(calc_result, 2)
             }
         }
