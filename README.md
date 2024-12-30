@@ -63,8 +63,8 @@ O **Padrão Factory** é utilizado para separar a responsabilidade de criação 
 1. Clone o repositório:
 
     ```bash
-    git clone 
-    cd 
+    git clone https://github.com/joschonarth/crazy-calculators
+    cd crazy-calculators
     ```
 
 2. Crie um ambiente virtual (opcional):
