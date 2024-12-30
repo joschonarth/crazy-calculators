@@ -22,10 +22,11 @@ class Calculator4:
         if "numbers" not in body:
             raise HttpUnprocessableEntityError("Malformed body: 'numbers' field is required.")
         
+        input_data = body["numbers"]
+
         if len(input_data) == 0:
             raise HttpBadRequestError("The list of numbers cannot be empty.")
         
-        input_data = body["numbers"]
         return input_data
     
     def __calculate_mean(self, numbers: List[float]) -> float:
