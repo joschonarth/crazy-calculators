@@ -37,6 +37,11 @@ Este projeto implementa uma série de calculadoras desenvolvidas com boas práti
 - Caso contrário:
   - Uma mensagem de falha é exibida.
 
+### 4️⃣ Quarta Calculadora
+
+- **N números** são fornecidos como entrada.
+- A **média** dos números é calculada e retornada.
+
 ---
 
 ## 🏗️ Design Patterns
@@ -175,6 +180,28 @@ O **Padrão Factory** é utilizado para separar a responsabilidade de criação 
             "title": "BadRequest"
         }
     ]
+}
+```
+
+### 4️⃣ POST - `/calculator/4`
+
+**Request:**
+
+```json
+{
+    "numbers": [1, 2, 3, 4, 5]
+}
+```
+
+**Response:**
+
+```json
+{
+    "data": {
+        "calculator": 4,
+        "success": true,
+        "value": 3.0
+    }
 }
 ```
 
